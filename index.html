@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>SoraPay - Anonymous Sender</title>
+<link rel="icon" href="assets/logo.svg" type="image/svg+xml">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="assets/css/style.css">
+</head>
+<body>
+
+<header class="topbar" id="topbar">
+  <div class="brand" id="logoHome" title="Kembali ke atas">
+    <img src="assets/logo.svg" alt="SoraPay logo" class="brand-logo">
+    <span class="brand-name">SoraPay</span>
+  </div>
+  <button id="themeToggle" class="theme-toggle" aria-label="Ganti tema">🌙</button>
+</header>
+
+<main class="wrapper">
+
+  <section class="hero glass">
+    <h1>Kirim Pesan Anonim</h1>
+    <p class="subtitle">Tempel link NGL tujuan, tulis pesanmu, kirim satu per satu dengan aman.</p>
+  </section>
+
+  <section class="card glass">
+    <label class="field-label" for="targetInput">Target NGL Link</label>
+    <input type="text" id="targetInput" class="text-input" placeholder="Target: https://ngl.link/username" autocomplete="off">
+    <p id="targetError" class="error-text hidden">Format salah. Contoh: Target: https://ngl.link/username</p>
+
+    <label class="field-label" for="messageInput">Pesan</label>
+    <textarea id="messageInput" class="text-input textarea" rows="4" placeholder="Tulis pesan anonim kamu di sini..."></textarea>
+    <p class="hint-text">Satu pesan per pengiriman. Klik tombol kirim untuk mengirim pesan ini ke target.</p>
+
+    <button id="sendBtn" class="btn-primary">
+      <span id="sendBtnText">Kirim Pesan</span>
+    </button>
+
+    <div id="statusBox" class="status-box hidden"></div>
+  </section>
+
+  <section class="card glass bg-picker-card">
+    <h3 class="section-title">Kustom Background</h3>
+    <div class="preset-row" id="presetRow">
+      <button class="preset-swatch" data-color="#0f172a" style="background:#0f172a"></button>
+      <button class="preset-swatch" data-color="#1e3a8a" style="background:#1e3a8a"></button>
+      <button class="preset-swatch" data-color="#4c1d95" style="background:#4c1d95"></button>
+      <button class="preset-swatch" data-color="#065f46" style="background:#065f46"></button>
+      <button class="preset-swatch" data-color="#7c2d12" style="background:#7c2d12"></button>
+      <button class="preset-swatch" data-color="#f8fafc" style="background:#f8fafc"></button>
+    </div>
+    <div class="color-picker-row">
+      <label for="colorPicker">Warna kustom:</label>
+      <input type="color" id="colorPicker" value="#0f172a">
+      <button id="resetBgBtn" class="btn-secondary">Reset</button>
+    </div>
+  </section>
+
+  <section class="card glass topup-card">
+    <h3 class="section-title">Butuh Topup?</h3>
+    <p class="hint-text">Isi saldo SoraPay kamu dengan mudah dan cepat.</p>
+    <a href="https://sorapay.grosirtopup.com" target="_blank" rel="noopener noreferrer" class="btn-cta">
+      Topup SoraPay ⚡
+    </a>
+  </section>
+
+</main>
+
+<footer class="footer glass">
+  <h4 class="footer-title">Created by</h4>
+  <ul class="footer-list">
+    <li><span class="footer-label">Instagram</span><a href="https://instagram.com/digital_topap_sorapay" target="_blank" rel="noopener noreferrer">@digital_topap_sorapay</a></li>
+    <li><span class="footer-label">ID</span><span>lang.87788</span></li>
+    <li><span class="footer-label">TikTok</span><span>ryuuuuuuuu82</span></li>
+  </ul>
+  <p class="footer-disclaimer">Gunakan untuk tujuan wajar. Patuhi TOS NGL. Jangan digunakan untuk spam/harassment.</p>
+</footer>
+
+<script src="assets/js/app.js"></script>
+</body>
+</html>
